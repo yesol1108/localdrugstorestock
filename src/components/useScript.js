@@ -26,9 +26,9 @@ const useScript = ({url, lat, lng}) => {
               if(lat > 0 || lng > 0) marker.setMap(map);
           })
       }
-      // return () => {
-      //   document.body.removeChild(script);
-      // }
+      return () => {
+        document.body.removeChild(script);
+      }
     }, [url, lat, lng]);
   };
   
