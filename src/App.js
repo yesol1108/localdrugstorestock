@@ -40,7 +40,7 @@ class App extends Component {
               <Ref innerRef={this.contextRef}>
                 <Segment>
                     <Data address={this.state.address} selectStore={this.selectStore.bind(this)}/>
-                  <Rail size='massive' close position='right'>
+                  <Rail size='big' close position='right'>
                     <Sticky context={this.contextRef}>
                       <Map lat={this.state.lat} lng={this.state.lng} />
                     </Sticky>
