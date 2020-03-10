@@ -35,7 +35,7 @@ export default class SearchBar extends Component {
           value={this.state.addr}
           onChange={this.handleChange}
           name="addr"
-          style={{width: '95%', height:70, margin: 10}}
+          style={{width: '95%', height: 50, margin: 10}}
         />
     );
   }
