@@ -27,22 +27,16 @@ export default class SearchBar extends Component {
     console.log(this.state);
     this.props.onSearchByAddress(this.state.addr);
   }
-
-
-
  
   render() {
     return (
-      <form onSubmit = {this.handleSubmit}>
-        <Input
+    <Input action = { <Button color='teal' content='Search' onClick={this.handleSubmit } /> }
           placeholder="예- '서울특별시 강남구' or '서울특별시 강남구 논현동'"
           value={this.state.addr}
           onChange={this.handleChange}
           name="addr"
+          style={{width: 500, margin: 10}}
         />
-        <Button type="submit">검색</Button>
-      </form>
-      
     );
   }
 }

@@ -39,17 +39,27 @@ function Data(props) {
   if (loading) return <div>로딩중..</div>;
   if (error) return <div>에러가 발생했습니다</div>;
   if (!data) return null;
+    const dataList =  data.map(dt => {
+        return (
+            <Item>
+                <Item.Content>
+                    <Item.Header>
+                        {dt.name}
+                    </Item.Header>
+                    <Item.Meta>
+                        {dt.addr}
+                    </Item.Meta>
+                </Item.Content>
+            </Item>
+        );
+    })
+
     return (
-
-
-    <ul>
-      {data.map(dt => (
-        <li key={dt.code}>
-          {dt.name} ({dt.remain_stat})
-        </li>
-      ))}
-    </ul>
-  );
+        <Item.Group divided link>
+            {dataList}
+        </Item.Group>
+    )
+   
 }
 
 export default Data;
