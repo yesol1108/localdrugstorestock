@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ef70a3f65d579b16698abbd50a798cf",
+    "revision": "72f2d09f59e6f5724cc1f392a8ec2406",
     "url": "/localdrugstorestock/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/localdrugstorestock/static/css/2.55ace5d9.chunk.css"
   },
   {
-    "revision": "7c69b2b4c42e0dba7f8e",
+    "revision": "d75bd3007d1233126820",
     "url": "/localdrugstorestock/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/localdrugstorestock/static/js/2.c4e1a549.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7c69b2b4c42e0dba7f8e",
-    "url": "/localdrugstorestock/static/js/main.08f6d948.chunk.js"
+    "revision": "d75bd3007d1233126820",
+    "url": "/localdrugstorestock/static/js/main.893ce7bd.chunk.js"
   },
   {
     "revision": "9690a785518a0a2d6429",
