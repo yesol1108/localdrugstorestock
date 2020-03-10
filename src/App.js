@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { Segment, Grid } from 'semantic-ui-react';
 import SearchBar from './components/SearchBar';
-import Map from './components/Map';
 import Data from './Data';
+
 class App extends Component {
 
   constructor(props) {
@@ -21,9 +22,15 @@ class App extends Component {
   render() {
     return (
         <div>
-          <SearchBar onSearchByAddress={this.onSearchByAddress.bind(this)}/>
-          <Data address={this.state.address}/>
-          <Map/>
+          <SearchBar onSearchByAddress={this.onSearchByAddress.bind(this)} />
+          <Grid columns={2}>
+            <Grid.Column>
+              <Data address={this.state.address}/>
+            </Grid.Column>
+            <Grid.Column>
+              {/* <Map/> */}
+            </Grid.Column>
+          </Grid>
         </div>
     );
   }
