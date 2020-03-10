@@ -56,7 +56,7 @@ function Data(props) {
         color = "gray";
       }
         return (
-            <Item key = {dt.code} style={{ margin:'10px'}} onClick={()=> props.selectStore(dt.lat, dt.lng)}>
+            <Item key = {dt.code} style={{ padding:'10px'}} onClick={()=> props.selectStore(dt.lat, dt.lng)}>
                 <Item.Content>
                     <Item.Header style = {{color: {color}}}>
                         {dt.name} <br/>

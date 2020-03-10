@@ -1,5 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import useScript from './useScript';
+import {
+    Sticky,
+  } from 'semantic-ui-react'
 
 export default function Map(props) {
     const [lng, setLng] = useState(props.lng);
@@ -21,6 +24,6 @@ export default function Map(props) {
     );
 
     return (
-        <div id="map" style={{width: '100%', height: '500px'}}></div>
+            <div id="map" style={{width: '100%', height: '500px'}}></div>
     );
 }

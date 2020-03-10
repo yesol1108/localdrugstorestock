@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import { Segment, Grid } from 'semantic-ui-react';
+import React, { Component, createRef } from 'react';
+import { Segment, Grid, Ref, Rail, Sticky } from 'semantic-ui-react';
 import SearchBar from './components/SearchBar';
 import Data from './Data';
 
 import Map from './components/Map';
 
 class App extends Component {
+  contextRef = createRef()
 
   constructor(props) {
     super(props);
@@ -36,10 +37,16 @@ class App extends Component {
           <SearchBar onSearchByAddress={this.onSearchByAddress.bind(this)} />
           <Grid columns={2}>
             <Grid.Column>
-              <Data address={this.state.address} selectStore={this.selectStore.bind(this)}/>
-            </Grid.Column>
-            <Grid.Column>
-              <Map lat={this.state.lat} lng={this.state.lng} />
+              <Ref innerRef={this.contextRef}>
+                <Segment>
+                    <Data address={this.state.address} selectStore={this.selectStore.bind(this)}/>
+                  <Rail size='massive' close position='right'>
+                    <Sticky context={this.contextRef}>
+                      <Map lat={this.state.lat} lng={this.state.lng} />
+                    </Sticky>
+                  </Rail>
+                </Segment>
+              </Ref>
             </Grid.Column>
           </Grid>
         </div>
