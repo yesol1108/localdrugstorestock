@@ -3,6 +3,8 @@ import { Segment, Grid } from 'semantic-ui-react';
 import SearchBar from './components/SearchBar';
 import Data from './Data';
 
+import Map from './components/Map';
+
 class App extends Component {
 
   constructor(props) {
@@ -28,7 +30,7 @@ class App extends Component {
               <Data address={this.state.address}/>
             </Grid.Column>
             <Grid.Column>
-              {/* <Map/> */}
+              <Map/>
             </Grid.Column>
           </Grid>
         </div>
