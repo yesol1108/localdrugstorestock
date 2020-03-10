@@ -14,16 +14,21 @@ const useScript = ({url, lat, lng}) => {
       script.onload = () => {
           kakao.maps.load(() => {
               let el = document.getElementById('map');
-              console.log(el);
-              new kakao.maps.Map(el, {
+              let markerPos = new kakao.maps.LatLng(lat, lng);
+              // console.log(el);
+              let map = new kakao.maps.Map(el, {
                 center: new kakao.maps.LatLng(lat, lng),
                 level: 3
-              })
+              });
+              let marker = new kakao.maps.Marker({
+                position: markerPos
+              });
+              if(lat > 0 || lng > 0) marker.setMap(map);
           })
       }
-      return () => {
-        document.body.removeChild(script);
-      }
+      // return () => {
+      //   document.body.removeChild(script);
+      // }
     }, [url, lat, lng]);
   };
   

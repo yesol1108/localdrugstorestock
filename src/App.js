@@ -12,6 +12,8 @@ class App extends Component {
     
     this.state = {
       address : "",
+      lat: 0,
+      lng: 0,
     }
   }
 
@@ -21,16 +23,23 @@ class App extends Component {
     })
   }
 
+  selectStore(lat, lng) {
+    this.setState({
+      lat: lat,
+      lng: lng
+    })
+  }
+
   render() {
     return (
         <div>
           <SearchBar onSearchByAddress={this.onSearchByAddress.bind(this)} />
           <Grid columns={2}>
             <Grid.Column>
-              <Data address={this.state.address}/>
+              <Data address={this.state.address} selectStore={this.selectStore.bind(this)}/>
             </Grid.Column>
             <Grid.Column>
-              <Map/>
+              <Map lat={this.state.lat} lng={this.state.lng} />
             </Grid.Column>
           </Grid>
         </div>
