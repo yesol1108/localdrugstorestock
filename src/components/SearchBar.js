@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Input, Button } from "semantic-ui-react";
 
 export default class SearchBar extends Component {
-  //export default는 class 마지막에 export default 써주는것과 동일
 
   constructor(props) {
     super(props);
@@ -27,9 +26,6 @@ export default class SearchBar extends Component {
     console.log(this.state);
     this.props.onSearchByAddress(this.state.addr);
   }
-
-
-
  
   render() {
     return (

@@ -8,9 +8,9 @@ function Data(props) {
   const [error, setError] = useState(null);
   const [addr, setAddr] = useState(props.address);
 
-  console.log("!!"+props.address)
-  if(props.address != addr) {
-      setAddr(props.address)
+  console.log("!!" + props.address)
+  if (props.address != addr) {
+    setAddr(props.address)
   }
 
   useEffect(() => {
@@ -21,9 +21,9 @@ function Data(props) {
         setLoading(true);
         const response = await axios.get(
           'https://8oi9s0nnth.apigw.ntruss.com/corona19-masks/v1/storesByAddr/json', {
-            params: {
-                address: props.address
-            }    
+          params: {
+            address: props.address
+          }
         }
         );
         setData(response.data.stores); // 데이터는 response.data 안에 들어있습니다.
@@ -39,7 +39,7 @@ function Data(props) {
   if (loading) return <div>로딩중..</div>;
   if (error) return <div>에러가 발생했습니다</div>;
   if (!data) return null;
-    return (
+  return (
 
 
     <ul>
