@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/localdrugstorestock/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/localdrugstorestock/static/js/main.bf871ba8.chunk.js",
-    "main.js.map": "/localdrugstorestock/static/js/main.bf871ba8.chunk.js.map",
+    "main.js": "/localdrugstorestock/static/js/main.a3e711e1.chunk.js",
+    "main.js.map": "/localdrugstorestock/static/js/main.a3e711e1.chunk.js.map",
     "runtime-main.js": "/localdrugstorestock/static/js/runtime-main.6b21a999.js",
     "runtime-main.js.map": "/localdrugstorestock/static/js/runtime-main.6b21a999.js.map",
     "static/css/2.55ace5d9.chunk.css": "/localdrugstorestock/static/css/2.55ace5d9.chunk.css",
     "static/js/2.d53810c2.chunk.js": "/localdrugstorestock/static/js/2.d53810c2.chunk.js",
     "static/js/2.d53810c2.chunk.js.map": "/localdrugstorestock/static/js/2.d53810c2.chunk.js.map",
     "index.html": "/localdrugstorestock/index.html",
-    "precache-manifest.fdec0d217b43ed9cad3f71d6c3acf464.js": "/localdrugstorestock/precache-manifest.fdec0d217b43ed9cad3f71d6c3acf464.js",
+    "precache-manifest.12bce91d88b3a6069d3767e3be72a099.js": "/localdrugstorestock/precache-manifest.12bce91d88b3a6069d3767e3be72a099.js",
     "service-worker.js": "/localdrugstorestock/service-worker.js",
     "static/css/2.55ace5d9.chunk.css.map": "/localdrugstorestock/static/css/2.55ace5d9.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/localdrugstorestock/static/css/main.5ecd60fb.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.55ace5d9.chunk.css",
     "static/js/2.d53810c2.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.bf871ba8.chunk.js"
+    "static/js/main.a3e711e1.chunk.js"
   ]
 }
