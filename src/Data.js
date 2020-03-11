@@ -21,15 +21,17 @@ function Data(props) {
         setLoading(true);
         const response = await axios.get(
           '/storesByAddr/json', {
-          params: {
-            address: addr
-          }
+            headers: {
+              'Access-Control-Allow-Origin': '*',
+            },
+            params: {
+              address: addr
+            }
         }
         );
         setData(response.data);
         setRes(response);
       } catch (e) {
-        console.log("!!"+res)
         setError(e);
       }
       setLoading(false);
