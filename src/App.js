@@ -12,9 +12,9 @@ class App extends Component {
     super(props);
     
     this.state = {
-      address : "",
-      lat: 0,
-      lng: 0,
+      address : "서울특별시 강남구",
+      lat: 33.450701,
+      lng: 126.570667,
     }
   }
 

@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
 import useScript from './useScript';
-import {
-    Sticky,
-  } from 'semantic-ui-react'
 
 export default function Map(props) {
     const [lng, setLng] = useState(props.lng);
     const [lat, setLat] = useState(props.lat);
-
-    console.log("!!" + lat +","+ lng)
 
     if(props.lng !== lng || props.lat !== lat) {
         setLng(props.lng);

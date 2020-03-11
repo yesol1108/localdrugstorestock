@@ -23,7 +23,11 @@ const useScript = ({url, lat, lng}) => {
               let marker = new kakao.maps.Marker({
                 position: markerPos
               });
-              if(lat > 0 || lng > 0) marker.setMap(map);
+              if(lat !== 33.450701 && lng !== 126.570667){
+                if(lat > 0 || lng > 0) marker.setMap(map);
+              }
+              
+              
           })
       }
     }, [url, lat, lng]);

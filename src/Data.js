@@ -7,8 +7,9 @@ function Data(props) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [addr, setAddr] = useState(props.address);
+  const [res, setRes] = useState(null);
 
-  if(props.address != addr) {
+  if(props.address !== addr) {
       setAddr(props.address)
   }
 
@@ -19,14 +20,16 @@ function Data(props) {
         setData(null);
         setLoading(true);
         const response = await axios.get(
-          'https://8oi9s0nnth.apigw.ntruss.com/corona19-masks/v1/storesByAddr/json', {
+          '/storesByAddr/json', {
           params: {
-            address: props.address
+            address: addr
           }
         }
         );
-        setData(response.data.stores); // 데이터는 response.data 안에 들어있습니다.
+        setData(response.data);
+        setRes(response);
       } catch (e) {
+        console.log("!!"+res)
         setError(e);
       }
       setLoading(false);
@@ -39,7 +42,7 @@ function Data(props) {
   if (error) return <div>에러가 발생했습니다</div>;
   if (!data) return null;
 
-    const dataList =  data.map(dt => {
+    const dataList =  data.stores.map(dt => {
       let remain_stat = "";
       let color = "";
       if(dt.remain_stat === "plenty") {

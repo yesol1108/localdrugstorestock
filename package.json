@@ -29,6 +29,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "https://8oi9s0nnth.apigw.ntruss.com/corona19-masks/v1",
   "browserslist": {
     "production": [
       ">0.2%",
