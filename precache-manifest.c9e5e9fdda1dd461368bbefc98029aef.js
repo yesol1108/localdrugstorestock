@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72f2d09f59e6f5724cc1f392a8ec2406",
+    "revision": "0a1d869c16a5dce75fe76e0d65fd5f9f",
     "url": "/localdrugstorestock/index.html"
   },
   {
-    "revision": "fcb3516b3533cc030f47",
+    "revision": "47ecc9a6ee8d149c4f87",
     "url": "/localdrugstorestock/static/css/2.55ace5d9.chunk.css"
   },
   {
-    "revision": "d75bd3007d1233126820",
+    "revision": "628e017a83f6fb96ddd1",
     "url": "/localdrugstorestock/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "fcb3516b3533cc030f47",
-    "url": "/localdrugstorestock/static/js/2.c4e1a549.chunk.js"
+    "revision": "47ecc9a6ee8d149c4f87",
+    "url": "/localdrugstorestock/static/js/2.d53810c2.chunk.js"
   },
   {
     "revision": "49c45e15b22906ea61e3b3085d227f58",
-    "url": "/localdrugstorestock/static/js/2.c4e1a549.chunk.js.LICENSE.txt"
+    "url": "/localdrugstorestock/static/js/2.d53810c2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d75bd3007d1233126820",
-    "url": "/localdrugstorestock/static/js/main.893ce7bd.chunk.js"
+    "revision": "628e017a83f6fb96ddd1",
+    "url": "/localdrugstorestock/static/js/main.ffdb22a5.chunk.js"
   },
   {
     "revision": "9690a785518a0a2d6429",
